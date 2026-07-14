@@ -457,6 +457,15 @@ STORAGE_CAPACITIES = {
     "SSD 15.3TB": "6621",
 }
 
+CASE_FORM_FACTORS = {
+    "Micro ATX": "11",
+    "ATX": "12",
+    "E-ATX": "13",
+    "Mini ITX": "14",
+    "SSI CEB": "9",
+    "SSI EEB": "10",
+    "XL-ATX": "15",
+}
 CASE_TYPES = {"Full Tower": "6659", "Mid Tower": "6660", "Mini Tower": "6661"}
 CASE_BRANDS = {
     "Pichau": "210",
@@ -1046,18 +1055,19 @@ SEARCH_CASES_TOOL = Tool(
     name="search_cases",
     description=(
         "Search for PC cases (gabinetes) on Pichau compatible with a given "
-        "motherboard form factor. The `form_factor` value must come from the "
-        "`formato_placa` field (raw code, not `formato_placatext`) of a "
-        "motherboard previously returned by search_motherboards."
+        "motherboard form factor."
     ),
     inputSchema={
         "type": "object",
         "properties": {
             "form_factor": {
                 "type": "string",
+                "enum": list(CASE_FORM_FACTORS) + list(CASE_FORM_FACTORS.values()),
                 "description": (
-                    "Form factor code taken from a motherboard's `formato_placa` "
-                    "field, e.g. '11' for Micro ATX"
+                    "Motherboard form factor to filter compatible cases by. Accepts "
+                    "either a human name (e.g. 'ATX') or the raw code from a "
+                    "motherboard's `formato_placa` field (e.g. '11') returned by "
+                    "search_motherboards -- both work."
                 ),
             },
             "case_type": {
@@ -1272,16 +1282,31 @@ def _require_socket(arguments: dict) -> tuple[str | None, str | None]:
     return socket, None
 
 
-def _require_case_form_factor(arguments: dict) -> tuple[str | None, str | None]:
-    """Validate the required `form_factor` argument. Returns (code, error_message)."""
-    form_factor = arguments.get("form_factor")
-    if not form_factor:
+def _resolve_case_form_factor(arguments: dict) -> tuple[str | None, str | None]:
+    """Resolve the required `form_factor` argument to a raw Pichau code.
+
+    Accepts either a human-readable name (e.g. 'ATX') or the raw numeric
+    code from a motherboard's `formato_placa` field (e.g. '11'), so the
+    tool works standalone as well as chained from search_motherboards.
+    """
+    value = arguments.get("form_factor")
+    if not value:
         return None, (
-            "O parâmetro 'form_factor' é obrigatório. Use o campo 'formato_placa' "
-            "(não 'form_factor'/'formato_placatext') de uma placa-mãe retornada "
-            "por search_motherboards."
+            f"O parâmetro 'form_factor' é obrigatório. Use um nome como "
+            f"{', '.join(CASE_FORM_FACTORS)}, ou o código bruto do campo "
+            f"'form_factor' de uma placa-mãe retornada por search_motherboards."
         )
-    return form_factor, None
+    value = str(value).strip()
+    if value in CASE_FORM_FACTORS.values():
+        return value, None
+    code = {name.lower(): code for name, code in CASE_FORM_FACTORS.items()}.get(value.lower())
+    if code is not None:
+        return code, None
+    return None, (
+        f"Valor inválido para 'form_factor': {value!r}. Use um nome como "
+        f"{', '.join(CASE_FORM_FACTORS)}, ou um código bruto reconhecido "
+        f"({', '.join(CASE_FORM_FACTORS.values())})."
+    )
 
 
 def _resolve_codes(
@@ -1768,7 +1793,7 @@ async def handle_search_storage(arguments: dict) -> list[TextContent]:
 
 
 async def handle_search_cases(arguments: dict) -> list[TextContent]:
-    form_factor, error = _require_case_form_factor(arguments)
+    form_factor, error = _resolve_case_form_factor(arguments)
     if error:
         return [TextContent(type="text", text=error)]
 
