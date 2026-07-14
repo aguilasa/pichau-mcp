@@ -722,6 +722,215 @@ KEYBOARD_BRANDS = {
     "XPG": "7354",
 }
 
+CABLE_BRANDS = {
+    "Ajazz": "7976",
+    "Akko": "6684",
+    "ALN": "7876",
+    "ATTACKSHARK": "7940",
+    "Baseus": "8030",
+    "ChipSCE": "6303",
+    "Cooler Master": "60",
+    "Corsair": "59",
+    "DeepCool": "394",
+    "DEX": "545",
+    "Elgato": "725",
+    "ELG": "350",
+    "Empire": "500",
+    "Exbom": "602",
+    "F3": "760",
+    "Fortrek": "55",
+    "GEONAV": "6375",
+    "Händz": "6519",
+    "Hayom": "6665",
+    "HP": "95",
+    "HyperX": "6348",
+    "Intelbras": "353",
+    "Kingston": "68",
+    "Lian Li": "743",
+    "Lexar": "723",
+    "Marvo": "580",
+    "MD9": "513",
+    "Megatron": "6627",
+    "motorola": "548",
+    "Multi": "74",
+    "Mymax": "53",
+    "PCYES!": "79",
+    "Pichau": "210",
+    "Pix": "558",
+    "PlusCable": "455",
+    "Point of View": "258",
+    "QCY": "745",
+    "Redragon": "419",
+    "ROYAL KLUDGE": "7509",
+    "Seccon": "7453",
+    "Senye": "7829",
+    "Thermaltake": "52",
+    "Thermal Grizzly": "6361",
+    "Trust": "616",
+    "Ubiquiti": "6310",
+    "UGREEN": "8021",
+    "Vinik": "213",
+    "Xiaomi": "6401",
+    "X-CELL": "6360",
+}
+
+MOUSE_INTERFACES = {
+    "Bluetooth": "46",
+    "Sem fio(Wireless)": "47",
+    "Com fio": "7535",
+    "USB": "49",
+    "USB/3.5mm": "7487",
+    "Tipo-C": "7488",
+    "Bluetooth/Wireless": "7491",
+    "Tri-mode": "8028",
+}
+MOUSE_BRANDS = {
+    "1STPLAYER": "6403",
+    "A+ PLUS": "7589",
+    "Acer": "449",
+    "ADATA": "257",
+    "AIGO": "824",
+    "Ajazz": "7976",
+    "Akko": "6684",
+    "AOC": "110",
+    "Asus": "34",
+    "ATK GEAR": "8031",
+    "ATTACKSHARK": "7940",
+    "Benq": "221",
+    "BlueCase": "494",
+    "BRX": "6288",
+    "Cherry Xtrfy": "8127",
+    "Cooler Master": "60",
+    "Corsair": "59",
+    "Cougar": "93",
+    "Darmoshark": "7639",
+    "Dazz": "568",
+    "DeepCool": "394",
+    "DEEPSKY": "7571",
+    "Duex": "6350",
+    "ELG": "350",
+    "Fantech": "7648",
+    "Fortrek": "55",
+    "Force One": "6693",
+    "FOXXRAY": "7935",
+    "GEONAV": "6375",
+    "Glorious": "828",
+    "HAVIT": "606",
+    "HP": "95",
+    "HyperX": "6348",
+    "Intelbras": "353",
+    "Keychron": "7534",
+    "Kingston": "68",
+    "K-MEX": "107",
+    "KROSS": "7469",
+    "KWG": "826",
+    "Lamzu": "7964",
+    "Logitech": "57",
+    "Mad Catz": "836",
+    "Mancer": "536",
+    "Marvo": "580",
+    "MAXPRINT": "88",
+    "Microdigi": "420",
+    "Microsoft": "202",
+    "MONSGEEK": "7565",
+    "Motospeed": "720",
+    "MSI": "121",
+    "Multi": "74",
+    "NZXT": "96",
+    "PCYES!": "79",
+    "Philips": "82",
+    "Pichau": "210",
+    "R8": "7787",
+    "Razer": "58",
+    "Redragon": "419",
+    "RAPOO": "7416",
+    "ROYAL KLUDGE": "7509",
+    "Scyrox": "7962",
+    "Solid Gear": "7973",
+    "T-Dagger": "750",
+    "TGT": "749",
+    "Thermaltake": "52",
+    "Trust": "616",
+    "THUNDEROBOT": "7508",
+    "Vinik": "213",
+    "XPG": "7354",
+    "Xtrfy": "6308",
+    "Zalman": "115",
+    "Zowie": "480",
+}
+
+SPEAKER_BRANDS = {
+    "Audio Technica": "6294",
+    "C3Tech": "78",
+    "Creative": "6299",
+    "Duex": "6350",
+    "Divoom": "7223",
+    "Edifier": "64",
+    "ELG": "350",
+    "Empire": "500",
+    "Fifine": "7641",
+    "Fortrek": "55",
+    "Force One": "6693",
+    "FOXXRAY": "7935",
+    "GEONAV": "6375",
+    "Harman": "724",
+    "HAVIT": "606",
+    "HP": "95",
+    "JBL": "532",
+    "Kisonli": "7689",
+    "K-MEX": "107",
+    "LG": "111",
+    "Logitech": "57",
+    "Mancer": "536",
+    "Marvo": "580",
+    "Microlab": "719",
+    "Multi": "74",
+    "NewLink": "389",
+    "Philips": "82",
+    "Pichau": "210",
+    "Pulse": "431",
+    "QCY": "745",
+    "R8": "7787",
+    "Razer": "58",
+    "Redragon": "419",
+    "ROYAL KLUDGE": "7509",
+    "T-Dagger": "750",
+    "TGT": "749",
+    "Trust": "616",
+    "Vinik": "213",
+    "WaveOne": "7690",
+    "Xiaomi": "6401",
+}
+
+WEBCAM_BRANDS = {
+    "BlueCase": "494",
+    "Brazil PC": "6287",
+    "Cougar": "93",
+    "Creative": "6299",
+    "Elgato": "725",
+    "Fortrek": "55",
+    "Genius": "54",
+    "GET": "6520",
+    "HAVIT": "606",
+    "HyperX": "6348",
+    "Intelbras": "353",
+    "Kisonli": "7689",
+    "Logitech": "57",
+    "Mancer": "536",
+    "Microsoft": "202",
+    "Multi": "74",
+    "PCYES!": "79",
+    "Pichau": "210",
+    "Razer": "58",
+    "Redragon": "419",
+    "RAPOO": "7416",
+    "STREAMPLIFY": "7365",
+    "T-Dagger": "750",
+    "TGT": "749",
+    "Trust": "616",
+    "Zinnia": "6625",
+}
+
 SEARCH_PROCESSORS_TOOL = Tool(
     name="search_processors",
     description=(
@@ -1252,6 +1461,174 @@ SEARCH_KEYBOARDS_TOOL = Tool(
     },
 )
 
+SEARCH_CABLES_TOOL = Tool(
+    name="search_cables",
+    description=(
+        "Search for cables, adapters, hubs, and switches (cabos e adaptadores) "
+        "for sale on Pichau, e.g. HDMI cables, USB hubs, KVM/HDMI switches, "
+        "docking stations. Only `query` and `brands` are reliably applied "
+        "server-side -- Pichau's backend does not honor color filters for this "
+        "category (verified by testing), so that was intentionally left out. "
+        "No socket dependency."
+    ),
+    inputSchema={
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "Free text search terms, e.g. 'hub usb 3.0' or 'cabo hdmi 2.1'",
+            },
+            "brands": {
+                "type": "array",
+                "items": {"type": "string", "enum": list(CABLE_BRANDS)},
+                "description": "Optional filter by one or more brands",
+            },
+            "sort": {
+                "type": "string",
+                "enum": SORT_OPTIONS,
+                "default": "relevance",
+                "description": "Result ordering",
+            },
+            "page": {
+                "type": "integer",
+                "default": 1,
+                "description": "Page number of results",
+            },
+            "max_results": {
+                "type": "integer",
+                "default": 10,
+                "description": "Maximum number of results to return",
+            },
+        },
+    },
+)
+
+SEARCH_MICE_TOOL = Tool(
+    name="search_mice",
+    description=(
+        "Search for computer mice for sale on Pichau. Only `query`, "
+        "`interface` and `brands` are reliably applied server-side -- "
+        "Pichau's backend does not honor color or backlighting filters for "
+        "this category (verified by testing), so those were intentionally "
+        "left out. No socket dependency."
+    ),
+    inputSchema={
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "Free text search terms, e.g. 'mouse sem fio 26000dpi'",
+            },
+            "interface": {
+                "type": "array",
+                "items": {"type": "string", "enum": list(MOUSE_INTERFACES)},
+                "description": "Optional filter by one or more connection interfaces",
+            },
+            "brands": {
+                "type": "array",
+                "items": {"type": "string", "enum": list(MOUSE_BRANDS)},
+                "description": "Optional filter by one or more mouse brands",
+            },
+            "sort": {
+                "type": "string",
+                "enum": SORT_OPTIONS,
+                "default": "relevance",
+                "description": "Result ordering",
+            },
+            "page": {
+                "type": "integer",
+                "default": 1,
+                "description": "Page number of results",
+            },
+            "max_results": {
+                "type": "integer",
+                "default": 10,
+                "description": "Maximum number of results to return",
+            },
+        },
+    },
+)
+
+SEARCH_SPEAKERS_TOOL = Tool(
+    name="search_speakers",
+    description=(
+        "Search for computer speakers (caixas de som) for sale on Pichau. "
+        "Only `query` and `brands` are reliably applied server-side -- "
+        "Pichau's backend does not honor color, backlighting, or "
+        "connectivity filters for this category (verified by testing), so "
+        "those were intentionally left out. No socket dependency."
+    ),
+    inputSchema={
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "Free text search terms, e.g. 'caixa de som bluetooth'",
+            },
+            "brands": {
+                "type": "array",
+                "items": {"type": "string", "enum": list(SPEAKER_BRANDS)},
+                "description": "Optional filter by one or more speaker brands",
+            },
+            "sort": {
+                "type": "string",
+                "enum": SORT_OPTIONS,
+                "default": "relevance",
+                "description": "Result ordering",
+            },
+            "page": {
+                "type": "integer",
+                "default": 1,
+                "description": "Page number of results",
+            },
+            "max_results": {
+                "type": "integer",
+                "default": 10,
+                "description": "Maximum number of results to return",
+            },
+        },
+    },
+)
+
+SEARCH_WEBCAMS_TOOL = Tool(
+    name="search_webcams",
+    description=(
+        "Search for webcams for sale on Pichau. Only `query` and `brands` "
+        "are reliably applied server-side (verified by testing). No socket "
+        "dependency."
+    ),
+    inputSchema={
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "Free text search terms, e.g. 'webcam 1080p com microfone'",
+            },
+            "brands": {
+                "type": "array",
+                "items": {"type": "string", "enum": list(WEBCAM_BRANDS)},
+                "description": "Optional filter by one or more webcam brands",
+            },
+            "sort": {
+                "type": "string",
+                "enum": SORT_OPTIONS,
+                "default": "relevance",
+                "description": "Result ordering",
+            },
+            "page": {
+                "type": "integer",
+                "default": 1,
+                "description": "Page number of results",
+            },
+            "max_results": {
+                "type": "integer",
+                "default": 10,
+                "description": "Maximum number of results to return",
+            },
+        },
+    },
+)
+
 
 def _product_url(item: dict) -> str:
     return f"https://www.pichau.com.br/{item['url_key']}"
@@ -1465,6 +1842,46 @@ def _format_monitor(item: dict) -> dict:
 
 
 def _format_keyboard(item: dict) -> dict:
+    return {
+        "name": item.get("name"),
+        "sku": item.get("sku"),
+        "url": _product_url(item),
+        "stock_status": item.get("stock_status"),
+        **_price_fields(item),
+    }
+
+
+def _format_cable(item: dict) -> dict:
+    return {
+        "name": item.get("name"),
+        "sku": item.get("sku"),
+        "url": _product_url(item),
+        "stock_status": item.get("stock_status"),
+        **_price_fields(item),
+    }
+
+
+def _format_mouse(item: dict) -> dict:
+    return {
+        "name": item.get("name"),
+        "sku": item.get("sku"),
+        "url": _product_url(item),
+        "stock_status": item.get("stock_status"),
+        **_price_fields(item),
+    }
+
+
+def _format_speaker(item: dict) -> dict:
+    return {
+        "name": item.get("name"),
+        "sku": item.get("sku"),
+        "url": _product_url(item),
+        "stock_status": item.get("stock_status"),
+        **_price_fields(item),
+    }
+
+
+def _format_webcam(item: dict) -> dict:
     return {
         "name": item.get("name"),
         "sku": item.get("sku"),
@@ -1973,6 +2390,149 @@ async def handle_search_keyboards(arguments: dict) -> list[TextContent]:
     return [TextContent(type="text", text=json.dumps(result, indent=2, ensure_ascii=False))]
 
 
+async def handle_search_cables(arguments: dict) -> list[TextContent]:
+    marcas_codes, error = _resolve_codes(arguments.get("brands"), CABLE_BRANDS, "Marca")
+    if error:
+        return [TextContent(type="text", text=error)]
+
+    query = arguments.get("query")
+    sort = arguments.get("sort", "relevance")
+    page = arguments.get("page", 1)
+    max_results = arguments.get("max_results", 10)
+
+    params = {
+        "page": page,
+        "marcas": ",".join(marcas_codes) if marcas_codes else None,
+        "q": query,
+        "sort": None if sort == "relevance" else sort,
+    }
+
+    try:
+        data = await fetch_products("monte-cabos", params)
+    except PichauAPIError as exc:
+        return [TextContent(type="text", text=f"Erro ao buscar cabos/adaptadores: {exc}")]
+
+    products = data.get("products", {})
+    items = products.get("items", [])[:max_results]
+    page_info = products.get("page_info", {})
+
+    result = {
+        "page": page_info.get("current_page", page),
+        "total_pages": page_info.get("total_pages"),
+        "results": [_format_cable(item) for item in items],
+    }
+    return [TextContent(type="text", text=json.dumps(result, indent=2, ensure_ascii=False))]
+
+
+async def handle_search_mice(arguments: dict) -> list[TextContent]:
+    interface_codes, error = _resolve_codes(
+        arguments.get("interface"), MOUSE_INTERFACES, "Interface"
+    )
+    if error:
+        return [TextContent(type="text", text=error)]
+
+    marcas_codes, error = _resolve_codes(arguments.get("brands"), MOUSE_BRANDS, "Marca")
+    if error:
+        return [TextContent(type="text", text=error)]
+
+    query = arguments.get("query")
+    sort = arguments.get("sort", "relevance")
+    page = arguments.get("page", 1)
+    max_results = arguments.get("max_results", 10)
+
+    params = {
+        "page": page,
+        "interface": ",".join(interface_codes) if interface_codes else None,
+        "marcas": ",".join(marcas_codes) if marcas_codes else None,
+        "q": query,
+        "sort": None if sort == "relevance" else sort,
+    }
+
+    try:
+        data = await fetch_products("monte-mouse", params)
+    except PichauAPIError as exc:
+        return [TextContent(type="text", text=f"Erro ao buscar mouses: {exc}")]
+
+    products = data.get("products", {})
+    items = products.get("items", [])[:max_results]
+    page_info = products.get("page_info", {})
+
+    result = {
+        "page": page_info.get("current_page", page),
+        "total_pages": page_info.get("total_pages"),
+        "results": [_format_mouse(item) for item in items],
+    }
+    return [TextContent(type="text", text=json.dumps(result, indent=2, ensure_ascii=False))]
+
+
+async def handle_search_speakers(arguments: dict) -> list[TextContent]:
+    marcas_codes, error = _resolve_codes(arguments.get("brands"), SPEAKER_BRANDS, "Marca")
+    if error:
+        return [TextContent(type="text", text=error)]
+
+    query = arguments.get("query")
+    sort = arguments.get("sort", "relevance")
+    page = arguments.get("page", 1)
+    max_results = arguments.get("max_results", 10)
+
+    params = {
+        "page": page,
+        "marcas": ",".join(marcas_codes) if marcas_codes else None,
+        "q": query,
+        "sort": None if sort == "relevance" else sort,
+    }
+
+    try:
+        data = await fetch_products("monte-sound", params)
+    except PichauAPIError as exc:
+        return [TextContent(type="text", text=f"Erro ao buscar caixas de som: {exc}")]
+
+    products = data.get("products", {})
+    items = products.get("items", [])[:max_results]
+    page_info = products.get("page_info", {})
+
+    result = {
+        "page": page_info.get("current_page", page),
+        "total_pages": page_info.get("total_pages"),
+        "results": [_format_speaker(item) for item in items],
+    }
+    return [TextContent(type="text", text=json.dumps(result, indent=2, ensure_ascii=False))]
+
+
+async def handle_search_webcams(arguments: dict) -> list[TextContent]:
+    marcas_codes, error = _resolve_codes(arguments.get("brands"), WEBCAM_BRANDS, "Marca")
+    if error:
+        return [TextContent(type="text", text=error)]
+
+    query = arguments.get("query")
+    sort = arguments.get("sort", "relevance")
+    page = arguments.get("page", 1)
+    max_results = arguments.get("max_results", 10)
+
+    params = {
+        "page": page,
+        "marcas": ",".join(marcas_codes) if marcas_codes else None,
+        "q": query,
+        "sort": None if sort == "relevance" else sort,
+    }
+
+    try:
+        data = await fetch_products("monte-webcam", params)
+    except PichauAPIError as exc:
+        return [TextContent(type="text", text=f"Erro ao buscar webcams: {exc}")]
+
+    products = data.get("products", {})
+    items = products.get("items", [])[:max_results]
+    page_info = products.get("page_info", {})
+
+    result = {
+        "page": page_info.get("current_page", page),
+        "total_pages": page_info.get("total_pages"),
+        "results": [_format_webcam(item) for item in items],
+    }
+    return [TextContent(type="text", text=json.dumps(result, indent=2, ensure_ascii=False))]
+
+
 TOOLS: list[Tool] = [
     SEARCH_PROCESSORS_TOOL,
     SEARCH_COOLERS_TOOL,
@@ -1984,6 +2544,10 @@ TOOLS: list[Tool] = [
     SEARCH_POWER_SUPPLIES_TOOL,
     SEARCH_MONITORS_TOOL,
     SEARCH_KEYBOARDS_TOOL,
+    SEARCH_CABLES_TOOL,
+    SEARCH_MICE_TOOL,
+    SEARCH_SPEAKERS_TOOL,
+    SEARCH_WEBCAMS_TOOL,
 ]
 
 HANDLERS = {
@@ -1997,4 +2561,8 @@ HANDLERS = {
     "search_power_supplies": handle_search_power_supplies,
     "search_monitors": handle_search_monitors,
     "search_keyboards": handle_search_keyboards,
+    "search_cables": handle_search_cables,
+    "search_mice": handle_search_mice,
+    "search_speakers": handle_search_speakers,
+    "search_webcams": handle_search_webcams,
 }

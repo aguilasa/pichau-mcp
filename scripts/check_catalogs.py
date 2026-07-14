@@ -57,6 +57,11 @@ CATALOGS = [
     ("monte-keyboard", "mecanico", t.KEYBOARD_MECHANICAL, "KEYBOARD_MECHANICAL"),
     ("monte-keyboard", "interface", t.KEYBOARD_INTERFACES, "KEYBOARD_INTERFACES"),
     ("monte-keyboard", "marcas", t.KEYBOARD_BRANDS, "KEYBOARD_BRANDS"),
+    ("monte-cabos", "marcas", t.CABLE_BRANDS, "CABLE_BRANDS"),
+    ("monte-mouse", "interface", t.MOUSE_INTERFACES, "MOUSE_INTERFACES"),
+    ("monte-mouse", "marcas", t.MOUSE_BRANDS, "MOUSE_BRANDS"),
+    ("monte-sound", "marcas", t.SPEAKER_BRANDS, "SPEAKER_BRANDS"),
+    ("monte-webcam", "marcas", t.WEBCAM_BRANDS, "WEBCAM_BRANDS"),
 ]
 
 

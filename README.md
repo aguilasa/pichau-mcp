@@ -51,6 +51,22 @@ computador na Pichau (loja de hardware).
   sim/não), `interface` (USB/wireless/bluetooth/etc.) e marca(s) —
   `layout`, `iluminacao` e `macro` existem em `aggregations` mas foram
   testados e não são aplicados pelo backend, então não foram expostos.
+* `search_cables` — busca cabos, adaptadores, hubs e switches via
+  `api/request/monte-cabos`. Sem dependência de socket; filtra apenas
+  por `query` e marca(s) — `cor_padrao` e `iluminacao` existem em
+  `aggregations` mas foram testados e não são aplicados pelo backend.
+* `search_mice` — busca mouses via `api/request/monte-mouse`. Sem
+  dependência de socket; filtra por `query`, `interface`
+  (USB/wireless/bluetooth/etc.) e marca(s) — `cor_padrao` e
+  `iluminacao` existem em `aggregations` mas não são aplicados pelo
+  backend.
+* `search_speakers` — busca caixas de som via `api/request/monte-sound`.
+  Sem dependência de socket; filtra apenas por `query` e marca(s) —
+  `cor_padrao`, `iluminacao` e `conectividade` existem em
+  `aggregations` mas não são aplicados pelo backend.
+* `search_webcams` — busca webcams via `api/request/monte-webcam`.
+  Sem dependência de socket; filtra por `query` e marca(s) (únicos
+  filtros de categoria disponíveis nesse endpoint).
 
 Todas as tools aceitam `query` (busca textual livre, mapeada para o
 parâmetro `q` da Pichau) além dos filtros específicos de cada
