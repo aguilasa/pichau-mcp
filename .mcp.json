@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pichau-mcp": {
+      "command": "uv",
+      "args": ["run", "server.py"],
+      "cwd": "/home/ingmar/desenvolvimento/pichau-mcp"
+    }
+  }
+}
