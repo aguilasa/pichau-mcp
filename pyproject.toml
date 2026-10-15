@@ -1,8 +1,11 @@
 [project]
 name = "pichau-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "Unofficial MCP server for searching PC hardware on Pichau (pichau.com.br)"
 requires-python = ">=3.13"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 dependencies = [
     "curl-cffi>=0.15.0",
     "mcp>=1.28.1",
