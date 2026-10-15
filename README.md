@@ -1,7 +1,27 @@
 # pichau-mcp
 
-MCP server que expõe ferramentas para o Claude Code buscar peças de
-computador na Pichau (loja de hardware).
+MCP server **não oficial** que expõe ferramentas para o Claude Code (ou
+qualquer cliente MCP) buscar peças de computador na Pichau (loja de
+hardware).
+
+> **Aviso / Disclaimer**
+>
+> Este projeto é independente e **não tem afiliação, endosso ou
+> vínculo** com a Bazam & Pichau Informática Ltda. "Pichau" é marca
+> registrada de seus respectivos titulares e é citada aqui apenas para
+> identificar o site consultado.
+>
+> O server usa endpoints internos e não documentados do site
+> (`api/request/monte-*`), os mesmos que alimentam a ferramenta "Monte
+> seu PC". Eles podem mudar, quebrar ou ser bloqueados a qualquer
+> momento, sem aviso. Nenhum dado é armazenado ou redistribuído: cada
+> busca é feita ao vivo, a partir da máquina de quem roda o server.
+>
+> O software é fornecido "como está", sem garantia de qualquer tipo
+> (ver [LICENSE](LICENSE)). O uso é por conta e risco do usuário. Use
+> com moderação e respeite o site: não é uma ferramenta de scraping em
+> massa, e o cache/retry embutidos existem justamente para reduzir
+> requisições repetidas.
 
 ## Tools disponíveis
 
@@ -157,8 +177,16 @@ texto no lugar do código bruto), então precisa de rede pra rodar.
 
 ## Registrando no Claude Code
 
-O arquivo `.mcp.json` já aponta para este projeto. Reinicie o Claude Code
-para que as tools apareçam, ou rode `claude mcp list` para conferir.
+O arquivo `.mcp.json` registra o server relativo ao diretório do projeto.
+Reinicie o Claude Code para que as tools apareçam, ou rode
+`claude mcp list` para conferir.
 
-Este server também está registrado globalmente (`claude mcp add --scope
-user`), disponível em qualquer projeto sob o usuário atual.
+Para disponibilizar em qualquer projeto (escopo de usuário):
+
+```bash
+claude mcp add --scope user pichau-mcp -- uv run --directory /caminho/para/pichau-mcp server.py
+```
+
+## Licença
+
+[MIT](LICENSE).
